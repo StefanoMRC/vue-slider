@@ -12,9 +12,9 @@ var app = new Vue(
     el: '#root',
     data: {
       immagini: [
-        'https://source.unsplash.com/random/?shoes',
-        'https://source.unsplash.com/random/?fruits',
-        'https://source.unsplash.com/random/?city'
+        'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+        'https://images.unsplash.com/photo-1631642751439-b3e28f3638e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1216&q=80',
+        'https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
       ],
       products: [
         {
@@ -52,7 +52,8 @@ var app = new Vue(
       numero: 0,
     },
     created(){
-      this.prova()
+      setInterval(() => this.frecciaAvanti(), 2000)
+      
     },
     methods: {
       addToCart: function(element){
@@ -95,8 +96,16 @@ var app = new Vue(
            this.numero=this.immagini.length - 1
          }
         return this.numero
+      },
+      bottone1: function(){
+        this.numero=0
+      },
+      bottone2: function(){
+        this.numero=1     
+      },
+      bottone3: function(){
+        this.numero=2       
       }
-
     }
   }
 )

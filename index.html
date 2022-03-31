@@ -25,11 +25,23 @@
     <main class="container mt-5">
 
       <!-- Slider -->
-      <div class="row mb-5">
-        <div class="col d-flex align-items-center">
-          <button type="button" @click="frecciaAvanti">indietro</button>
-          <img class="mx-3 img-fluid" :src="immagini[numero]" alt="">
-          <button type="button" @click="frecciaAvanti">avanti</button>
+      <div class="container-fluid mb-5">
+        <div class="row ">
+          
+          <div class="col-12 d-flex align-items-center justify-content-center">
+            <button type="button" @click="frecciaAvanti">indietro</button>
+            <div class="cont-img">
+              <img class="mx-3  altezza" :src="immagini[numero]" alt="">
+              <div class="selettore d-flex align-items-center justify-content-center">
+                <button id="btn1" type="button" class="pallino bg_white mx-2" @click="bottone1"></button>
+                <button id="btn2" type="button" class="pallino bg_white mx-2" @click="bottone2"></button>
+                <button id="btn3" type="button" class="pallino bg_white mx-2" @click="bottone3"></button>
+              </div>
+            </div>
+            
+            <button type="button" @click="frecciaAvanti">avanti</button>
+          </div>
+          
         </div>
         
       </div>

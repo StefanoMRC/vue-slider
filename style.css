@@ -2,5 +2,30 @@
   background-color: antiquewhite;
 }
 .altezza{
-  height: 200px;
+  height: 600px;
+  width: 1000px;
+}
+.cont-img{
+  position: relative;
+}
+.selettore{
+  position: absolute;
+  top: 90%;
+  left: 45%;
+  background-color: rgba(0, 0, 0, 0.507);
+  height: 50px;
+  width: 120px;
+  border-radius: 30px;
+}
+.pallino{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  
+}
+.bg_white{
+  background-color:white;
+}
+.bg_blu{
+  background-color: blue;
 }
