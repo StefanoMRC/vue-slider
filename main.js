@@ -49,10 +49,16 @@ var app = new Vue(
         },
       ],
       carrello: [],
+      classBtn1:["pallino", "bg_white", "mx-2"],
+      classBtn2:["pallino", "bg_white", "mx-2"],
+      classBtn3:["pallino", "bg_white", "mx-2"],
       numero: 0,
     },
     created(){
-      setInterval(() => this.frecciaAvanti(), 2000)
+     
+      setInterval(() => this.frecciaAvanti(),  2000)
+
+     
       
     },
     methods: {
@@ -99,12 +105,64 @@ var app = new Vue(
       },
       bottone1: function(){
         this.numero=0
+        this.classBtn1.push("bg_blu")
+        this.classBtn2 = this.classBtn2.filter(
+          (element) => {
+            if( element != "bg_blu" ) {
+              return true
+            }
+            return false
+          }
+        )
+        this.classBtn3 = this.classBtn3.filter(
+          (element) => {
+            if( element != "bg_blu" ) {
+              return true
+            }
+            return false
+          }
+        )
+        
       },
       bottone2: function(){
-        this.numero=1     
+        this.numero=1
+        this.classBtn2.push("bg_blu") 
+        this.classBtn1 = this.classBtn1.filter(
+          (element) => {
+            if( element != "bg_blu" ) {
+              return true
+            }
+            return false
+          }
+        )
+        this.classBtn3 = this.classBtn3.filter(
+          (element) => {
+            if( element != "bg_blu" ) {
+              return true
+            }
+            return false
+          }
+        )    
       },
       bottone3: function(){
-        this.numero=2       
+        this.numero=2 
+        this.classBtn3.push("bg_blu")   
+        this.classBtn1 = this.classBtn1.filter(
+          (element) => {
+            if( element != "bg_blu" ) {
+              return true
+            }
+            return false
+          }
+        )
+        this.classBtn2 = this.classBtn2.filter(
+          (element) => {
+            if( element != "bg_blu" ) {
+              return true
+            }
+            return false
+          }
+        )   
       }
     }
   }

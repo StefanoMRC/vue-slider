@@ -33,9 +33,9 @@
             <div class="cont-img">
               <img class="mx-3  altezza" :src="immagini[numero]" alt="">
               <div class="selettore d-flex align-items-center justify-content-center">
-                <button id="btn1" type="button" class="pallino bg_white mx-2" @click="bottone1"></button>
-                <button id="btn2" type="button" class="pallino bg_white mx-2" @click="bottone2"></button>
-                <button id="btn3" type="button" class="pallino bg_white mx-2" @click="bottone3"></button>
+                <button id="btn1" type="button" :class="classBtn1" @click="bottone1"></button>
+                <button id="btn2" type="button" :class="classBtn2" @click="bottone2"></button>
+                <button id="btn3" type="button" :class="classBtn3" @click="bottone3"></button>
               </div>
             </div>
             
