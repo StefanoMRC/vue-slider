@@ -93,7 +93,6 @@ var app = new Vue(
              if(this.numero > this.immagini.length - 1){
                this.numero=0
              }
-            return this.numero
       },
       frecciaIndietro: function(){
         this.numero= this.numero-1;
@@ -101,7 +100,6 @@ var app = new Vue(
          if(this.numero < 0){
            this.numero=this.immagini.length - 1
          }
-        return this.numero
       },
       bottone1: function(){
         this.numero=0
