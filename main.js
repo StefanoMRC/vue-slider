@@ -50,8 +50,8 @@ var app = new Vue(
       ],
       carrello: [],
       classBtn1:["pallino", "bg_white", "mx-2"],
-      classBtn2:["pallino", "bg_white", "mx-2"],
-      classBtn3:["pallino", "bg_white", "mx-2"],
+      // classBtn2:["pallino", "bg_white", "mx-2"],
+      // classBtn3:["pallino", "bg_white", "mx-2"],
       numero: 0,
     },
     created(){

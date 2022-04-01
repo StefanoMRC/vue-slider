@@ -33,7 +33,7 @@
             <div class="cont-img">
               <img class="mx-3  altezza" :src="immagini[numero]" alt="">
               <div class="selettore d-flex align-items-center justify-content-center">
-                <button id="btn1" type="button" v-for="(element, index) in immagini" class="pallino"   :class=" (index==numero)? 'bg_blu':''" @click="bottone1(index)"></button>
+                <button id="btn1" type="button" v-for="(element, index) in immagini" class="pallino mx-2"   :class=" (index==numero)? 'bg_blu':''" @click="bottone1(index)"></button>
 
               </div>
             </div>
