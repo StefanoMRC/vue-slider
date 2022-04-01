@@ -93,6 +93,7 @@ var app = new Vue(
              if(this.numero > this.immagini.length - 1){
                this.numero=0
              }
+
       },
       frecciaIndietro: function(){
         this.numero= this.numero-1;
@@ -100,68 +101,69 @@ var app = new Vue(
          if(this.numero < 0){
            this.numero=this.immagini.length - 1
          }
+
       },
-      bottone1: function(){
-        this.numero=0
-        this.classBtn1.push("bg_blu")
-        this.classBtn2 = this.classBtn2.filter(
-          (element) => {
-            if( element != "bg_blu" ) {
-              return true
-            }
-            return false
-          }
-        )
-        this.classBtn3 = this.classBtn3.filter(
-          (element) => {
-            if( element != "bg_blu" ) {
-              return true
-            }
-            return false
-          }
-        )
+      bottone1: function(indeximmagini){
+        this.numero=indeximmagini
+        // this.classBtn1.push("bg_blu")
+        // this.classBtn2 = this.classBtn2.filter(
+        //   (element) => {
+        //     if( element != "bg_blu" ) {
+        //       return true
+        //     }
+        //     return false
+        //   }
+        // )
+        // this.classBtn3 = this.classBtn3.filter(
+        //   (element) => {
+        //     if( element != "bg_blu" ) {
+        //       return true
+        //     }
+        //     return false
+        //   }
+        // )
         
       },
-      bottone2: function(){
-        this.numero=1
-        this.classBtn2.push("bg_blu") 
-        this.classBtn1 = this.classBtn1.filter(
-          (element) => {
-            if( element != "bg_blu" ) {
-              return true
-            }
-            return false
-          }
-        )
-        this.classBtn3 = this.classBtn3.filter(
-          (element) => {
-            if( element != "bg_blu" ) {
-              return true
-            }
-            return false
-          }
-        )    
-      },
-      bottone3: function(){
-        this.numero=2 
-        this.classBtn3.push("bg_blu")   
-        this.classBtn1 = this.classBtn1.filter(
-          (element) => {
-            if( element != "bg_blu" ) {
-              return true
-            }
-            return false
-          }
-        )
-        this.classBtn2 = this.classBtn2.filter(
-          (element) => {
-            if( element != "bg_blu" ) {
-              return true
-            }
-            return false
-          }
-        )   
-      }
+      // bottone2: function(){
+      //   this.numero=1
+      //   this.classBtn2.push("bg_blu") 
+      //   this.classBtn1 = this.classBtn1.filter(
+      //     (element) => {
+      //       if( element != "bg_blu" ) {
+      //         return true
+      //       }
+      //       return false
+      //     }
+      //   )
+      //   this.classBtn3 = this.classBtn3.filter(
+      //     (element) => {
+      //       if( element != "bg_blu" ) {
+      //         return true
+      //       }
+      //       return false
+      //     }
+      //   )    
+      // },
+      // bottone3: function(){
+      //   this.numero=2 
+      //   this.classBtn3.push("bg_blu")   
+      //   this.classBtn1 = this.classBtn1.filter(
+      //     (element) => {
+      //       if( element != "bg_blu" ) {
+      //         return true
+      //       }
+      //       return false
+      //     }
+      //   )
+      //   this.classBtn2 = this.classBtn2.filter(
+      //     (element) => {
+      //       if( element != "bg_blu" ) {
+      //         return true
+      //       }
+      //       return false
+      //     }
+      //   )   
+      // }
     }
   }
 )
